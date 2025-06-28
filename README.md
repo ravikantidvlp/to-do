@@ -1,5 +1,7 @@
 # to-do
 
+### Frontend
+
 ### Run with Docker Frontend
 
 ```bash
@@ -8,6 +10,39 @@ docker build -t frontend .
 docker run -d -p 3000:3000 frontend
 
 ```
+### Run with without Docker Frontend
+
+```bash
+
+npm start
+
+```
+### Run test
+
+```bash
+
+npm test
+
+
+```
+
+### Run build
+
+```bash
+
+npm build
+
+
+```
+
+### Frontend url (Reactjs)
+
+```bash
+
+http://x.x.x.x:3000
+
+```
+### Backend
 
 ### Run with Docker Backend
 
@@ -24,22 +59,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ```
 
-### Run with without Docker Frontend
-
-```bash
-
-npm start
-
-```
-### Run build
-
-```bash
-
-npm build
-
-
-```
-### Run with without Docker Frontend
+### Run without Docker Backend
 
 ```bash
 
@@ -55,13 +75,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 5000 --reload
 http://x.x.x.x:5000/docs#/
 
 ```
-### Frontend (Reactjs)
 
-```bash
-
-http://x.x.x.x:3000
-
-```
 ### Backend API Endpoint
 
 ```bash
