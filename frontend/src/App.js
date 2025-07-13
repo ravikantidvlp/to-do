@@ -14,6 +14,7 @@ function App() {
 
   useEffect(() => {
     getalltask()
+    console.log('test')
   }, [])
 
   const getalltask = () => {
